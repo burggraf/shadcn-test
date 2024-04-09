@@ -23,6 +23,7 @@ const config = {
 		}),
     alias: {
       "@/*": "./src/lib/*",
+			'$services': './src/services',
     },    
   },
 };
