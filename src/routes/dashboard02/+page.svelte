@@ -1,20 +1,8 @@
 <script lang="ts">
-    import CircleUser from "lucide-svelte/icons/circle-user";
-    import LineChart from "lucide-svelte/icons/line-chart";
-    import Package from "lucide-svelte/icons/package";
-    import Home from "lucide-svelte/icons/home";
-    import ShoppingCart from "lucide-svelte/icons/shopping-cart";
-    import Bell from "lucide-svelte/icons/bell";
-    import Menu from "lucide-svelte/icons/menu";
-    import Package2 from "lucide-svelte/icons/package-2";
-    import Search from "lucide-svelte/icons/search";
-    import Users from "lucide-svelte/icons/users";
-    import { Badge } from "$lib/components/ui/badge/index.js";
-    import { Button } from "$lib/components/ui/button/index.js";
-    import * as Card from "$lib/components/ui/card/index.js";
-    import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
-    import { Input } from "$lib/components/ui/input/index.js";
-    import * as Sheet from "$lib/components/ui/sheet/index.js";
+    import { CircleUser, LineChart, Package, 
+            Home, ShoppingCart, Bell, 
+            Menu, Package2, Search, Users } from "lucide-svelte";
+    import { Badge, Button, Card, DropdownMenu, Input, Sheet } from "$lib";
   </script>
   <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
     <div class="hidden border-r bg-muted/40 md:block">
