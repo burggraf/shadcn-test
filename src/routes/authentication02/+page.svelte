@@ -18,7 +18,7 @@
         <div class="grid gap-2">
           <div class="flex items-center">
             <Label for="password">Password</Label>
-            <a href="##" class="ml-auto inline-block text-sm underline">
+            <a href="/authentication02" class="ml-auto inline-block text-sm underline">
               Forgot your password?
             </a>
           </div>
@@ -29,7 +29,7 @@
       </div>
       <div class="mt-4 text-center text-sm">
         Don&apos;t have an account?
-        <a href="##" class="underline"> Sign up </a>
+        <a href="/authentication02" class="underline"> Sign up </a>
       </div>
     </Card.Content>
   </Card.Root>

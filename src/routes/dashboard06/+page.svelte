@@ -27,7 +27,7 @@
     <aside class="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
       <nav class="flex flex-col items-center gap-4 px-2 py-4">
         <a
-          href="##"
+          href="/"
           class="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
         >
           <Package2 class="h-4 w-4 transition-all group-hover:scale-110" />
@@ -36,7 +36,7 @@
         <Tooltip.Root>
           <Tooltip.Trigger asChild let:builder>
             <a
-              href="##"
+              href="/"
               class="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               use:builder.action
               {...builder}
@@ -50,7 +50,7 @@
         <Tooltip.Root>
           <Tooltip.Trigger asChild let:builder>
             <a
-              href="##"
+              href="/"
               class="flex h-9 w-9 items-center justify-center rounded-lg transition-colors hover:text-foreground md:h-8 md:w-8"
               use:builder.action
               {...builder}
@@ -64,7 +64,7 @@
         <Tooltip.Root>
           <Tooltip.Trigger asChild let:builder>
             <a
-              href="##"
+              href="/"
               class="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               use:builder.action
               {...builder}
@@ -78,7 +78,7 @@
         <Tooltip.Root>
           <Tooltip.Trigger asChild let:builder>
             <a
-              href="##"
+              href="/"
               class="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               use:builder.action
               {...builder}
@@ -92,7 +92,7 @@
         <Tooltip.Root>
           <Tooltip.Trigger asChild let:builder>
             <a
-              href="##"
+              href="/"
               class="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               use:builder.action
               {...builder}
@@ -108,7 +108,7 @@
         <Tooltip.Root>
           <Tooltip.Trigger asChild let:builder>
             <a
-              href="##"
+              href="/"
               class="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               use:builder.action
               {...builder}
@@ -135,39 +135,39 @@
           <Sheet.Content side="left" class="sm:max-w-xs">
             <nav class="grid gap-6 text-lg font-medium">
               <a
-                href="##"
+                href="/"
                 class="group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base"
               >
                 <Package2 class="h-5 w-5 transition-all group-hover:scale-110" />
                 <span class="sr-only">Acme Inc</span>
               </a>
               <a
-                href="##"
+                href="/"
                 class="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
               >
                 <Home class="h-5 w-5" />
                 Dashboard
               </a>
               <a
-                href="##"
+                href="/"
                 class="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
               >
                 <ShoppingCart class="h-5 w-5" />
                 Orders
               </a>
-              <a href="##" class="flex items-center gap-4 px-2.5 text-foreground">
+              <a href="/" class="flex items-center gap-4 px-2.5 text-foreground">
                 <Package class="h-5 w-5" />
                 Products
               </a>
               <a
-                href="##"
+                href="/"
                 class="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
               >
                 <UsersRound class="h-5 w-5" />
                 Customers
               </a>
               <a
-                href="##"
+                href="/"
                 class="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
               >
                 <LineChart class="h-5 w-5" />
@@ -179,11 +179,11 @@
         <Breadcrumb.Root class="hidden md:flex">
           <Breadcrumb.List>
             <Breadcrumb.Item>
-              <Breadcrumb.Link href="##">Dashboard</Breadcrumb.Link>
+              <Breadcrumb.Link href="/">Dashboard</Breadcrumb.Link>
             </Breadcrumb.Item>
             <Breadcrumb.Separator />
             <Breadcrumb.Item>
-              <Breadcrumb.Link href="##">Products</Breadcrumb.Link>
+              <Breadcrumb.Link href="/">Products</Breadcrumb.Link>
             </Breadcrumb.Item>
             <Breadcrumb.Separator />
             <Breadcrumb.Item>

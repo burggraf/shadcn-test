@@ -32,14 +32,14 @@
         <div class="flex-1">
           <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
             <a
-              href="##"
+              href="/"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <Home class="h-4 w-4" />
               Dashboard
             </a>
             <a
-              href="##"
+              href="/"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <ShoppingCart class="h-4 w-4" />
@@ -51,21 +51,21 @@
               </Badge>
             </a>
             <a
-              href="##"
+              href="/"
               class="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
             >
               <Package class="h-4 w-4" />
               Products
             </a>
             <a
-              href="##"
+              href="/"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <Users class="h-4 w-4" />
               Customers
             </a>
             <a
-              href="##"
+              href="/"
               class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <LineChart class="h-4 w-4" />
@@ -104,19 +104,19 @@
           </Sheet.Trigger>
           <Sheet.Content side="left" class="flex flex-col">
             <nav class="grid gap-2 text-lg font-medium">
-              <a href="##" class="flex items-center gap-2 text-lg font-semibold">
+              <a href="/" class="flex items-center gap-2 text-lg font-semibold">
                 <Package2 class="h-6 w-6" />
                 <span class="sr-only">Acme Inc</span>
               </a>
               <a
-                href="##"
+                href="/"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
                 <Home class="h-5 w-5" />
                 Dashboard
               </a>
               <a
-                href="##"
+                href="/"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
               >
                 <ShoppingCart class="h-5 w-5" />
@@ -128,21 +128,21 @@
                 </Badge>
               </a>
               <a
-                href="##"
+                href="/"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
                 <Package class="h-5 w-5" />
                 Products
               </a>
               <a
-                href="##"
+                href="/"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
                 <Users class="h-5 w-5" />
                 Customers
               </a>
               <a
-                href="##"
+                href="/"
                 class="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
               >
                 <LineChart class="h-5 w-5" />
