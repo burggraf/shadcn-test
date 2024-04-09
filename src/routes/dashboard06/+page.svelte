@@ -1,27 +1,8 @@
 <script lang="ts">
-    import File from "lucide-svelte/icons/file";
-    import Home from "lucide-svelte/icons/home";
-    import LineChart from "lucide-svelte/icons/line-chart";
-    import ListFilter from "lucide-svelte/icons/list-filter";
-    import Ellipsis from "lucide-svelte/icons/ellipsis";
-    import Package from "lucide-svelte/icons/package";
-    import Package2 from "lucide-svelte/icons/package-2";
-    import PanelLeft from "lucide-svelte/icons/panel-left";
-    import CirclePlus from "lucide-svelte/icons/circle-plus";
-    import Search from "lucide-svelte/icons/search";
-    import Settings from "lucide-svelte/icons/settings";
-    import ShoppingCart from "lucide-svelte/icons/shopping-cart";
-    import UsersRound from "lucide-svelte/icons/users-round";
-    import { Badge } from "$lib/components/ui/badge/index.js";
-    import * as Breadcrumb from "$lib/components/ui/breadcrumb/index.js";
-    import { Button } from "$lib/components/ui/button/index.js";
-    import * as Card from "$lib/components/ui/card/index.js";
-    import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
-    import { Input } from "$lib/components/ui/input/index.js";
-    import * as Sheet from "$lib/components/ui/sheet/index.js";
-    import * as Table from "$lib/components/ui/table/index.js";
-    import * as Tabs from "$lib/components/ui/tabs/index.js";
-    import * as Tooltip from "$lib/components/ui/tooltip/index.js";
+    import { File, Home, LineChart, ListFilter, Ellipsis, Package, Package2,
+      PanelLeft, CirclePlus, Search, Settings, ShoppingCart, UsersRound } from "lucide-svelte";
+    import { Badge, Breadcrumb, Button, Card, DropdownMenu, Input,
+      Sheet, Table, Tabs, Tooltip } from "$lib";
   </script>
   <div class="flex min-h-screen w-full flex-col bg-muted/40">
     <aside class="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">

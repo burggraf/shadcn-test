@@ -16,11 +16,11 @@ import * as Select from "$lib/components/ui/select/index.js";
 export { Separator } from "$lib/components/ui/separator/index.js";
 import * as Sheet  from "$lib/components/ui/sheet/index.js";
 import * as Table from "$lib/components/ui/table/index.js";
-export { Tabs } from "$lib/components/ui/tabs/index.js";
+import * as Tabs from "$lib/components/ui/tabs/index.js";
 export { Textarea } from "$lib/components/ui/textarea/index.js";
 export { Toggle } from "$lib/components/ui/toggle/index.js";
 import * as ToggleGroup from "$lib/components/ui/toggle-group/index.js";
 import * as Tooltip from "$lib/components/ui/tooltip/index.js";
 
 export { Accordion, Avatar, Breadcrumb, Card, Drawer, 
-    DropdownMenu, Pagination, Select, Sheet, Table, ToggleGroup, Tooltip } 
+    DropdownMenu, Pagination, Select, Sheet, Table, Tabs, ToggleGroup, Tooltip } 

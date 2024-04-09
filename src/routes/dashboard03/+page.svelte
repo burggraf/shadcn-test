@@ -1,28 +1,8 @@
 <script lang="ts">
-    import Triangle from "lucide-svelte/icons/triangle";
-    import Bot from "lucide-svelte/icons/bot";
-    import SquareTerminal from "lucide-svelte/icons/square-terminal";
-    import CodeXML from "lucide-svelte/icons/code-xml";
-    import Settings2 from "lucide-svelte/icons/settings-2";
-    import LifeBuoy from "lucide-svelte/icons/life-buoy";
-    import Book from "lucide-svelte/icons/book";
-    import SquareUser from "lucide-svelte/icons/square-user";
-    import Settings from "lucide-svelte/icons/settings";
-    import Rabbit from "lucide-svelte/icons/rabbit";
-    import Bird from "lucide-svelte/icons/bird";
-    import Turtle from "lucide-svelte/icons/turtle";
-    import Share from "lucide-svelte/icons/share";
-    import Paperclip from "lucide-svelte/icons/paperclip";
-    import Mic from "lucide-svelte/icons/mic";
-    import CornerDownLeft from "lucide-svelte/icons/corner-down-left";
-    import { Badge } from "$lib/components/ui/badge/index.js";
-    import { Button } from "$lib/components/ui/button/index.js";
-    import * as Tooltip from "$lib/components/ui/tooltip/index.js";
-    import * as Drawer from "$lib/components/ui/drawer/index.js";
-    import { Input } from "$lib/components/ui/input/index.js";
-    import { Textarea } from "$lib/components/ui/textarea/index.js";
-    import { Label } from "$lib/components/ui/label/index.js";
-    import * as Select from "$lib/components/ui/select/index.js";
+    import {Triangle, Bot, SquareTerminal, CodeXml, Settings2,
+    LifeBuoy, Book, SquareUser, Settings, Rabbit, Bird, Turtle,
+    Share, Paperclip, Mic, CornerDownLeft } from "lucide-svelte";
+    import { Badge, Button, Tooltip, Drawer, Input, Textarea, Label, Select } from "$lib";
   </script>
   <div class="grid h-screen w-full pl-[53px]">
     <aside class="inset-y fixed left-0 z-20 flex h-full flex-col border-r">
@@ -69,7 +49,7 @@
               aria-label="API"
               builders={[builder]}
             >
-              <CodeXML class="size-5" />
+              <CodeXml class="size-5" />
             </Button>
           </Tooltip.Trigger>
           <Tooltip.Content side="right" sideOffset={5}>API</Tooltip.Content>
