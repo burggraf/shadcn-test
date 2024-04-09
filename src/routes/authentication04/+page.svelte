@@ -1,7 +1,5 @@
 <script lang="ts">
-    import { Button } from "$lib/components/ui/button/index.js";
-    import { Input } from "$lib/components/ui/input/index.js";
-    import { Label } from "$lib/components/ui/label/index.js";
+    import { Button, Input, Label } from "$lib";
   </script>
   <div class="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
     <div class="flex items-center justify-center py-12">
