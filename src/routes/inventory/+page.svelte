@@ -1,17 +1,9 @@
 <script lang="ts">
-    import { CircleUser, LineChart, Package, 
-            Home, ShoppingCart, Bell, Menu, Package2, Search, Users } from "lucide-svelte";
+    import { CircleUser, LineChart, Package, Settings, LifeBuoy, LogOut,
+            Home, ShoppingCart, Menu as MenuIcon, Package2, Search, Users } from "lucide-svelte";
     import { Badge, Button, Card, DropdownMenu, Input, Sheet } from "$lib";
-    import SideMenu from "./SideMenu.svelte";
   </script>
-  <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
-    <div class="hidden border-r bg-muted/40 md:block">
-      <!--menu starts here-->
-      <SideMenu />
-      <!--menu ends here-->
-    </div>
-    <!--main content starts here-->
-    <div class="flex flex-col bg-red-100">
+    <div class="flex flex-col">
       <header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
         <Sheet.Root>
           <Sheet.Trigger asChild let:builder>
@@ -21,7 +13,7 @@
               class="shrink-0 md:hidden"
               builders={[builder]}
             >
-              <Menu class="h-5 w-5" />
+              <MenuIcon class="h-5 w-5" />
               <span class="sr-only">Toggle navigation menu</span>
             </Button>
           </Sheet.Trigger>
@@ -115,10 +107,10 @@
           <DropdownMenu.Content align="end">
             <DropdownMenu.Label>My Account</DropdownMenu.Label>
             <DropdownMenu.Separator />
-            <DropdownMenu.Item>Settings</DropdownMenu.Item>
-            <DropdownMenu.Item>Support</DropdownMenu.Item>
+            <DropdownMenu.Item><Settings class="h-4 w-4 mr-3" />Settings</DropdownMenu.Item>
+            <DropdownMenu.Item><LifeBuoy class="h-4 w-4 mr-3" />Support</DropdownMenu.Item>
             <DropdownMenu.Separator />
-            <DropdownMenu.Item>Logout</DropdownMenu.Item>
+            <DropdownMenu.Item><LogOut class="h-4 w-4 mr-3" />Logout</DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Root>
       </header>
@@ -139,6 +131,3 @@
         </div>
       </main>
     </div>
-    <!--main content ends here-->
-  </div>
-  
