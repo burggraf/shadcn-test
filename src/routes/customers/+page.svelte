@@ -41,7 +41,7 @@
 		<!--end MENU pane desktop-->
 	</div>
 	<!--MAIN page-->
-	<div class="bg-red-100 flex flex-col">
+	<div class="flex flex-col">
 		<header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
 			<Sheet.Root>
 				<Sheet.Trigger asChild let:builder>
