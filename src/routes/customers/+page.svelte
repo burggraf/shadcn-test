@@ -5,6 +5,7 @@
     import { Badge, Button, Card, DropdownMenu, Input, Sheet } from "$lib";
     import MenuContents from '$components/MenuContents.svelte'
     import MenuFooter from '$components/MenuFooter.svelte'
+    import UserMenu from '$components/UserMenu.svelte'
   </script>
   <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
     <div class="hidden border-r bg-muted/40 md:block">
@@ -79,28 +80,8 @@
             </div>
           </form>
         </div>
-        <DropdownMenu.Root>
-          <DropdownMenu.Trigger asChild let:builder>
-            <Button
-              builders={[builder]}
-              variant="secondary"
-              size="icon"
-              class="rounded-full"
-            >
-              <CircleUser class="h-5 w-5" />
-              <span class="sr-only">Toggle user menu</span>
-            </Button>
-          </DropdownMenu.Trigger>
-          <DropdownMenu.Content align="end">
-            <DropdownMenu.Label>My Account</DropdownMenu.Label>
-            <DropdownMenu.Separator />
-            <DropdownMenu.Item>Settings</DropdownMenu.Item>
-            <DropdownMenu.Item>Support</DropdownMenu.Item>
-            <DropdownMenu.Separator />
-            <DropdownMenu.Item>Logout</DropdownMenu.Item>
-          </DropdownMenu.Content>
-        </DropdownMenu.Root>
-      </header>
+        <UserMenu />
+    </header>
       <main class="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
         <div class="flex items-center">
           <h1 class="text-lg font-semibold md:text-2xl">Customers</h1>
