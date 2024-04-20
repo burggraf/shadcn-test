@@ -15,63 +15,21 @@
 	import MenuContents from '$components/MenuContents.svelte'
 	import MenuFooter from '$components/MenuFooter.svelte'
 	import UserMenu from '$components/UserMenu.svelte'
+    import Menu1 from '$components/Menu1.svelte'
+	import Menu2 from '$components/Menu2.svelte'
 </script>
 
 <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
 	<div class="hidden border-r bg-muted/40 md:block">
 		<!--MENU pane desktop-->
-		<div class="flex h-full max-h-screen flex-col gap-2">
-			<div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
-				<a href="/" class="flex items-center gap-2 font-semibold">
-					<Package2 class="h-6 w-6" />
-					<span class="">Acme Inc</span>
-				</a>
-				<Button variant="outline" size="icon" class="ml-auto h-8 w-8">
-					<Bell class="h-4 w-4" />
-					<span class="sr-only">Toggle notifications</span>
-				</Button>
-			</div>
-			<div class="flex-1">
-				<MenuContents />
-			</div>
-			<div class="mt-auto p-4">
-				<MenuFooter />
-			</div>
-		</div>
+        <Menu1 />
 		<!--end MENU pane desktop-->
 	</div>
 	<!--MAIN page-->
 	<div class="flex flex-col">
 		<header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
-			<Sheet.Root>
-				<Sheet.Trigger asChild let:builder>
-					<Button variant="outline" size="icon" class="shrink-0 md:hidden" builders={[builder]}>
-						<Menu class="h-5 w-5" />
-						<span class="sr-only">Toggle navigation menu</span>
-					</Button>
-				</Sheet.Trigger>
-				<Sheet.Content side="left" class="px-0 flex flex-col">
-					<div class="flex h-full max-h-screen flex-col gap-2">
-						<div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
-							<a href="/" class="flex items-center gap-2 font-semibold">
-								<Package2 class="h-6 w-6" />
-								<span class="">Acme Inc</span>
-							</a>
-							<Button variant="outline" size="icon" class="ml-auto h-8 w-8">
-								<Bell class="h-4 w-4" />
-								<span class="sr-only">Toggle notifications</span>
-							</Button>
-						</div>
-						<div class="flex-1">
-							<MenuContents />
-						</div>
-						<div class="mt-auto p-4">
-							<MenuFooter />
-						</div>
-					</div>
-				</Sheet.Content>
-			</Sheet.Root>
-			<div class="w-full flex-1">
+            <Menu2 />
+            <div class="w-full flex-1">
 				<form>
 					<div class="relative">
 						<Search class="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
