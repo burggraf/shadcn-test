@@ -8,7 +8,7 @@
 </script>
 <PageMaster>
 	<div slot="header-center">
-		Orders
+		Products
 	</div>
 	<!-- <div slot="header-right">
 		rt
@@ -16,10 +16,10 @@
 
 	<div slot="main-content">
 		<div class="flex">
-			<h1 class="text-lg font-semibold md:text-2xl">Orders</h1>
+			<h1 class="text-lg font-semibold md:text-2xl">Products</h1>
 		</div>
 		<div>
-			orders content
+			products content
 		</div>
 	</div>
 

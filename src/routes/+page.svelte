@@ -1,21 +1,27 @@
 <script lang="ts">
-    // import { CircleUser, LineChart, Package, 
-    //         Home, ShoppingCart, Bell, Menu as MenuIcon, Package2, Search, Users } from "lucide-svelte";
-    // import { Badge, Button, Card, DropdownMenu, Input, Sheet } from "$lib";
-	  // import { goto } from "$app/navigation"
-  </script>
+	import PageMaster from '$components/PageMaster.svelte';
+	import { Search } from 'lucide-svelte'
+	import { Button, Input } from '$lib'
+	import UserMenu from '$components/UserMenu.svelte'
+    import MenuFull from '$components/MenuFull.svelte'
+	import MenuSidebar from '$components/MenuSidebar.svelte'
+</script>
+<PageMaster>
+	<div slot="header-center">
+		Dashboard
+	</div>
+	<!-- <div slot="header-right">
+		rt
+	</div> -->
 
-<div class="flex flex-col">
-  <header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
-    Header
-  </header>
-  <main class="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-    <div class="flex items-center">
-      <h1 class="text-lg font-semibold md:text-2xl">Home</h1>
-    </div>
-    <div
-      class="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm"
-    >
-    </div>
-  </main>
-</div>
+	<div slot="main-content">
+		<div class="flex">
+			<h1 class="text-lg font-semibold md:text-2xl">Dashboard</h1>
+		</div>
+		<div>
+			dashboard content
+		</div>
+	</div>
+
+
+</PageMaster>

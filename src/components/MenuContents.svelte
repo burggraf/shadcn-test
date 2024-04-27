@@ -12,7 +12,7 @@
       Dashboard
     </a>
     <a
-      href="/"
+      href="/orders"
       class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
     >
       <ShoppingCart class="h-4 w-4" />
@@ -24,21 +24,21 @@
       </Badge>
     </a>
     <a
-      href="/"
+      href="/products"
       class="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
     >
       <Package class="h-4 w-4" />
       Products
     </a>
     <a
-      href="/"
+      href="/customers"
       class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
     >
       <Users class="h-4 w-4" />
       Customers
     </a>
     <a
-      href="/"
+      href="/analytics"
       class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
     >
       <LineChart class="h-4 w-4" />
