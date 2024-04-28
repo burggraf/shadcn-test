@@ -1,9 +1,15 @@
 <script lang="ts">
-    import { LineChart, Package, 
+    import { LineChart, LogIn, Package, 
             Home, ShoppingCart, Users } from "lucide-svelte";
     import { Badge } from "$lib";
+    import Login from "./Login.svelte";
 </script>
 <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
+  <div class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
+    <LogIn class="h-4 w-4" />
+    <Login />
+  </div>
+
     <a
       href="/"
       class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
@@ -36,12 +42,5 @@
     >
       <Users class="h-4 w-4" />
       Customers
-    </a>
-    <a
-      href="/analytics"
-      class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-    >
-      <LineChart class="h-4 w-4" />
-      Analytics
     </a>
   </nav>

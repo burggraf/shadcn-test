@@ -3,9 +3,10 @@ import * as Accordion from "$lib/components/ui/accordion/index.js";
 import * as Avatar from "$lib/components/ui/avatar/index.js";
 export { Badge } from "$lib/components/ui/badge/index.js";
 import * as Breadcrumb from "$lib/components/ui/breadcrumb/index.js";
-export { Button } from "$lib/components/ui/button/index.js";
+export { Button, buttonVariants } from "$lib/components/ui/button/index.js";
 import * as Card from "$lib/components/ui/card/index.js";
 export { Checkbox } from "$lib/components/ui/checkbox/index.js";
+import * as Dialog from "$lib/components/ui/dialog/index.js";
 import * as Drawer from "$lib/components/ui/drawer/index.js";
 import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
 export { Input } from "$lib/components/ui/input/index.js";
@@ -22,5 +23,5 @@ export { Toggle } from "$lib/components/ui/toggle/index.js";
 import * as ToggleGroup from "$lib/components/ui/toggle-group/index.js";
 import * as Tooltip from "$lib/components/ui/tooltip/index.js";
 
-export { Accordion, Avatar, Breadcrumb, Card, Drawer, 
+export { Accordion, Avatar, Breadcrumb, Card, Drawer, Dialog,
     DropdownMenu, Pagination, Select, Sheet, Table, Tabs, ToggleGroup, Tooltip } 
