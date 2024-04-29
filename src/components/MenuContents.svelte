@@ -4,9 +4,7 @@
     import { Badge } from "$lib";
     import Login from "./Login.svelte";
     const openLogin = () => {
-      const loginTrigger = document.getElementById("loginTrigger");
-      console.log('loginTrigger',loginTrigger)
-      loginTrigger?.click();
+      document.getElementById("loginTrigger")?.click();
     }
 </script>
 <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
