@@ -2,7 +2,7 @@
     import { Dialog, Button, Card, Input, Label } from "$lib";
 </script>
 <Dialog.Root>
-    <Dialog.Trigger>Login</Dialog.Trigger>
+    <Dialog.Trigger id="loginTrigger"></Dialog.Trigger>
     <Dialog.Content>
 
       <Card.Root class="border-none">
