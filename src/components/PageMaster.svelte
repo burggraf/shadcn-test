@@ -4,6 +4,8 @@
 	import UserMenu from '$components/UserMenu.svelte'
     import MenuFull from '$components/MenuFull.svelte'
 	import MenuSidebar from '$components/MenuSidebar.svelte'
+    import Login from "./Login.svelte";
+
 </script>
 <main>
     <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
@@ -36,5 +38,6 @@
             <!--end MAIN CONTENTS-->
         </div>
         <!--end MAIN page-->
+        <Login />
     </div>
 </main>

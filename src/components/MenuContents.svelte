@@ -2,8 +2,8 @@
     import { LineChart, LogIn, Package, 
             Home, ShoppingCart, Users } from "lucide-svelte";
     import { Badge } from "$lib";
-    import Login from "./Login.svelte";
     const openLogin = () => {
+      console.log(document.getElementById("loginTrigger"))
       document.getElementById("loginTrigger")?.click();
     }
 </script>
@@ -14,8 +14,6 @@
     <LogIn class="h-4 w-4" />
     Login
   </a>
-  <Login />
-
     <a
       href="/"
       class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
