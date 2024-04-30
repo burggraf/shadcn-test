@@ -15,6 +15,10 @@
             document.getElementById("requestPasswordResetCard")?.classList.remove("hidden");
         }
     };
+    let email = "";
+    let password = "";
+    let firstname = "";
+    let lastname = "";
 </script>
 <Dialog.Root>
     <Dialog.Trigger id="loginTrigger"></Dialog.Trigger>
@@ -30,7 +34,7 @@
           <div class="grid gap-4">
             <div class="grid gap-2">
               <Label for="email">Email</Label>
-              <Input id="signin_email" type="email" placeholder="m@example.com" required />
+              <Input bind:value={email} id="email" type="email" placeholder="m@example.com" required />
             </div>
             <div class="grid gap-2">
               <div class="flex items-center">
@@ -38,7 +42,7 @@
                 <span class="ml-auto inline-block text-sm underline cursor-pointer" 
                   on:click={()=>{setMode('passwordreset')}}> Forgot your password? </span>
               </div>
-              <Input id="signin_password" type="password" required />
+              <Input bind:value={password} id="password" type="password" required />
             </div>
             <Button type="submit" class="w-full">Login</Button>
             <Button variant="outline" class="w-full">Login with Google</Button>
@@ -62,20 +66,20 @@
             <div class="grid grid-cols-2 gap-4">
               <div class="grid gap-2">
                 <Label for="first-name">First name</Label>
-                <Input id="first-name" placeholder="Max" required />
+                <Input bind:value={firstname} id="firstname" placeholder="Max" required />
               </div>
               <div class="grid gap-2">
                 <Label for="last-name">Last name</Label>
-                <Input id="last-name" placeholder="Robinson" required />
+                <Input bind:value={lastname} id="lastname" placeholder="Robinson" required />
               </div>
             </div>
             <div class="grid gap-2">
               <Label for="email">Email</Label>
-              <Input id="signup_email" type="email" placeholder="m@example.com" required />
+              <Input bind:value={email} id="email" type="email" placeholder="m@example.com" required />
             </div>
             <div class="grid gap-2">
               <Label for="password">Password</Label>
-              <Input id="signup_password" type="password" />
+              <Input bind:value={password} id="password" type="password" />
             </div>
             <Button type="submit" class="w-full">Create an account</Button>
             <Button variant="outline" class="w-full">Sign up with Google</Button>
@@ -98,7 +102,7 @@
           <div class="grid gap-4">
             <div class="grid gap-2">
               <Label for="email">Email</Label>
-              <Input id="signin_email" type="email" placeholder="m@example.com" required />
+              <Input bind:value={email} id="email" type="email" placeholder="m@example.com" required />
             </div>
             <!-- <div class="grid gap-2">
               <div class="flex items-center">
