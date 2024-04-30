@@ -1,5 +1,6 @@
 //import adapter from "@sveltejs/adapter-auto";
 import adapter from '@sveltejs/adapter-static';
+import { svelte } from '@sveltejs/kit';
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -25,7 +26,16 @@ const config = {
       "@/*": "./src/lib/*",
 			'$services': './src/services',
       '$components': './src/components',
-    },    
+    },
+    // Add the onwarn function here to filter out a11y warnings
+    onwarn: (warning, handler) => {
+      if (warning.code && warning.code.startsWith('a11y-')) {
+        // Ignore a11y warnings
+        return;
+      }
+      // Handle other warnings normally
+      handler(warning);
+    }    
   },
 };
 
