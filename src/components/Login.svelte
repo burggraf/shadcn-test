@@ -1,5 +1,8 @@
 <script lang="ts">
     import { Dialog, Button, Card, Input, Label } from "$lib";
+    import { signUpWithEmail, signInWithEmail, currentUser } from "$services/supabase.auth.service";
+    import { closeDialog } from "$services/utils.service";
+    import Spinner from '$components/Spinner.svelte'
     const setMode = (mode: string) => {
         if (mode === "signup") {
             document.getElementById("signupCard")?.classList.remove("hidden");
@@ -19,17 +22,33 @@
     let password = "";
     let firstname = "";
     let lastname = "";
+    export const signUp = async () => {
+        const { user, session, error } = await signUpWithEmail(email, password);
+        console.log("user", user);
+        console.log("session", session);
+        console.log("error", error);
+    };
+    export const signIn = async () => {
+        document.getElementById("spinnerTrigger")?.click();
+        const { user, session, error } = await signInWithEmail(email, password);  
+        closeDialog(); 
+        console.log("user", user);
+        console.log("session", session);
+        console.log("error", error);
+        closeDialog();
+    };
 </script>
 <Dialog.Root>
     <Dialog.Trigger id="loginTrigger"></Dialog.Trigger>
     <Dialog.Content>
-
+  
       <Card.Root class="border-none" id="signinCard">
         <Card.Header>
           <Card.Title class="text-2xl">Login</Card.Title>
           <Card.Description>Enter your email below to login to your account</Card.Description>
         </Card.Header>
-        <Card.Content>
+        <Card.Content>  
+          <Spinner message="Please wait..." />  
           <form>
           <div class="grid gap-4">
             <div class="grid gap-2">
@@ -44,7 +63,7 @@
               </div>
               <Input bind:value={password} id="password" type="password" required />
             </div>
-            <Button type="submit" class="w-full">Login</Button>
+            <Button on:click={signIn} type="submit" class="w-full">Login</Button>
             <Button variant="outline" class="w-full">Login with Google</Button>
           </div>
           <div class="mt-4 text-center text-sm">
@@ -81,7 +100,7 @@
               <Label for="password">Password</Label>
               <Input bind:value={password} id="password" type="password" />
             </div>
-            <Button type="submit" class="w-full">Create an account</Button>
+            <Button on:click={signUp} type="submit" class="w-full">Create an account</Button>
             <Button variant="outline" class="w-full">Sign up with Google</Button>
           </div>
           <div class="mt-4 text-center text-sm">

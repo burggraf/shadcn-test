@@ -25,8 +25,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@supabase/supabase-js": "^2.42.7",
     "@sveltejs/adapter-static": "^3.0.1",
-    "bits-ui": "^0.21.5",
+    "bits-ui": "^0.21.7",
     "clsx": "^2.1.0",
     "lucide-svelte": "^0.376.1",
     "tailwind-merge": "^2.2.2",

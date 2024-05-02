@@ -3,6 +3,7 @@
     import { Button, Sheet } from "$lib";
     import MenuContents from "$components/MenuContents.svelte";
     import MenuFooter from "$components/MenuFooter.svelte";
+    const app_version = __APP_VERSION__;
 </script>
 <Sheet.Root>
     <Sheet.Trigger asChild let:builder>
@@ -28,6 +29,7 @@
             </div>
             <div class="mt-auto p-4">
                 <MenuFooter />
+                <div class="text-center">v.{app_version}</div>
             </div>
         </div>
     </Sheet.Content>

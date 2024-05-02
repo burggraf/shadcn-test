@@ -1,6 +1,7 @@
 // place files you want to import through the `$lib` alias in this folder.
 import * as Accordion from "$lib/components/ui/accordion/index.js";
 import * as Avatar from "$lib/components/ui/avatar/index.js";
+import * as AlertDialog from "$lib/components/ui/alert-dialog/index.js";
 export { Badge } from "$lib/components/ui/badge/index.js";
 import * as Breadcrumb from "$lib/components/ui/breadcrumb/index.js";
 export { Button, buttonVariants } from "$lib/components/ui/button/index.js";
@@ -23,5 +24,5 @@ export { Toggle } from "$lib/components/ui/toggle/index.js";
 import * as ToggleGroup from "$lib/components/ui/toggle-group/index.js";
 import * as Tooltip from "$lib/components/ui/tooltip/index.js";
 
-export { Accordion, Avatar, Breadcrumb, Card, Drawer, Dialog,
+export { Accordion, AlertDialog, Avatar, Breadcrumb, Card, Drawer, Dialog,
     DropdownMenu, Pagination, Select, Sheet, Table, Tabs, ToggleGroup, Tooltip } 

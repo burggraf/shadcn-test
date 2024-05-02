@@ -3,6 +3,7 @@
     import { Button } from "$lib";
     import MenuContents from "$components/MenuContents.svelte";
     import MenuFooter from "$components/MenuFooter.svelte";
+    const app_version = __APP_VERSION__;
 </script>
 <div class="flex h-full max-h-screen flex-col gap-2">
     <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
@@ -20,5 +21,6 @@
     </div>
     <div class="mt-auto p-4">
         <MenuFooter />
+        <div class="text-center">v.{app_version}</div>
     </div>
 </div>
