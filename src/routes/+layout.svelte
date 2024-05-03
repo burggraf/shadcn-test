@@ -7,5 +7,5 @@
     import { Toaster } from "$lib/components/ui/sonner";
   </script>
   <ModeWatcher />
-  <Toaster />
+  <Toaster richColors expand={true} visibleToasts={3} closeButton position="bottom-center" />
   <slot />

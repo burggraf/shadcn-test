@@ -46,9 +46,11 @@
 					label: 'Help',
 					onClick: () => console.info('help was clicked'),
 				},
+        duration: 5000
 			})
-		}
-		closeDialog()
+		} else {
+      closeDialog()
+    }
 	}
 </script>
 
