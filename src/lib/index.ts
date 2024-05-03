@@ -23,6 +23,6 @@ export { Textarea } from "$lib/components/ui/textarea/index.js";
 export { Toggle } from "$lib/components/ui/toggle/index.js";
 import * as ToggleGroup from "$lib/components/ui/toggle-group/index.js";
 import * as Tooltip from "$lib/components/ui/tooltip/index.js";
-
+import * as Sonner from "$lib/components/ui/sonner/index.js";
 export { Accordion, AlertDialog, Avatar, Breadcrumb, Card, Drawer, Dialog,
-    DropdownMenu, Pagination, Select, Sheet, Table, Tabs, ToggleGroup, Tooltip } 
+    DropdownMenu, Pagination, Select, Sheet, Sonner, Table, Tabs, ToggleGroup, Tooltip } 
