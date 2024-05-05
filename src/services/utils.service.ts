@@ -18,15 +18,15 @@ export const closeDialog = () => {
       closeButton.click();
   } else {
       console.error('closeDialog: Close button not found!');
-      let event = new KeyboardEvent("keydown", {
-        bubbles: true, // This event will bubble up through the DOM
-        cancelable: true, // This event can be canceled
-        key: "Escape", // The key value, e.g., "Enter"
-        keyCode: 27, // The keyCode for "Enter"
-        which: 27 // Deprecated, but provided for older browsers
-      });
-      let inputElement = document.getElementById("dialogItem"); // Get the target element
-      inputElement?.dispatchEvent(event); // Dispatch the event to the element
+      // let event = new KeyboardEvent("keydown", {
+      //   bubbles: true, // This event will bubble up through the DOM
+      //   cancelable: true, // This event can be canceled
+      //   key: "Escape", // The key value, e.g., "Enter"
+      //   keyCode: 27, // The keyCode for "Enter"
+      //   which: 27 // Deprecated, but provided for older browsers
+      // });
+      // let inputElement = document.getElementById("dialogItem"); // Get the target element
+      // inputElement?.dispatchEvent(event); // Dispatch the event to the element
   }        
 
 }
