@@ -13,7 +13,7 @@
 	let loadingModalComponent: any
 
 	export const signUp = async () => {
-		loadingModalComponent.open('Signing in...')
+		loadingModalComponent.open('Creating account...')
 		const { user, session, error } = await signUpWithEmail(email, password)
 		loadingModalComponent.close()
 		console.log('user', user)
