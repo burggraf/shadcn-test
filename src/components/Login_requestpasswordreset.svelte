@@ -44,7 +44,7 @@
                     <Label for="email">Email</Label>
                     <Input
                         bind:value={email}
-                        id="email"
+                        id="requestpasswordresetemail"
                         type="email"
                         placeholder="m@example.com"
                         required

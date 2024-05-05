@@ -45,7 +45,7 @@
 			<div class="grid gap-4">
 				<div class="grid gap-2">
 					<Label for="email">Email</Label>
-					<Input bind:value={email} id="email" type="email" placeholder="m@example.com" required />
+					<Input bind:value={email} id="signinemail" type="email" placeholder="m@example.com" required />
 				</div>
 				<div class="grid gap-2">
 					<div class="flex items-center">
@@ -59,7 +59,7 @@
 							Forgot your password?
 						</span>
 					</div>
-					<Input bind:value={password} id="password" type="password" required />
+					<Input bind:value={password} id="signinpassword" type="password" required />
 				</div>
 				<Button on:click={signIn} type="submit" class="w-full">Login</Button>
 				<Button variant="outline" class="w-full">Login with Google</Button>

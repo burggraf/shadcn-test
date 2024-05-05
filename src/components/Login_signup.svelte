@@ -60,7 +60,7 @@
                     <Label for="email">Email</Label>
                     <Input
                         bind:value={email}
-                        id="email"
+                        id="signupemail"
                         type="email"
                         placeholder="m@example.com"
                         required
@@ -68,7 +68,7 @@
                 </div>
                 <div class="grid gap-2">
                     <Label for="password">Password</Label>
-                    <Input bind:value={password} id="password" type="password" />
+                    <Input bind:value={password} id="signuppassword" type="password" />
                 </div>
                 <Button on:click={signUp} type="submit" class="w-full">Create an account</Button>
                 <Button variant="outline" class="w-full">Sign up with Google</Button>
