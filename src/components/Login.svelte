@@ -72,10 +72,10 @@
   let token = ''
 </script>
 
+<LoadingModal bind:this={loadingModalComponent} />
 <Dialog.Root>
 	<Dialog.Trigger id="loginTrigger"></Dialog.Trigger>
-	<Dialog.Content>
-		<LoadingModal bind:this={loadingModalComponent} />
+	<Dialog.Content class="flex">
 
     <Login_signin {controller} {email} {password} />
 
