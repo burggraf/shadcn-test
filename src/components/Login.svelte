@@ -75,7 +75,7 @@
 <LoadingModal bind:this={loadingModalComponent} />
 <Dialog.Root>
 	<Dialog.Trigger id="loginTrigger"></Dialog.Trigger>
-	<Dialog.Content class="flex">
+	<Dialog.Content class="p-2 m-0">
 
     <Login_signin {controller} {email} {password} />
 
