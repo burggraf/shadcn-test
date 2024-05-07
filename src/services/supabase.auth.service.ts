@@ -7,6 +7,7 @@ const profileTable = __APP_PROFILE_TABLE__;
 const profileKey = __APP_PROFILE_KEY__;
 
 supabase.auth.onAuthStateChange(async (event, session) => {
+  console.log('*** onAuthStateChange', event, session)
   currentUser.set(session?.user ?? null);
 });  
 
@@ -105,8 +106,12 @@ export const signUpWithEmail = async (email: string, password: string) => {
   export const resetPassword = async (email: string) => {
     const { data, error } = await supabase.auth.resetPasswordForEmail(email,
       {
-        redirectTo: window.location.origin // + '/resetpassword'
+        redirectTo: window.location.origin + '?'
       });
     return { data, error };
   }
   
+  export const updatePassword = async (new_password: string) => {
+    const { error, data } = await supabase.auth.updateUser({ password: new_password });
+    return { error, data };
+  }
