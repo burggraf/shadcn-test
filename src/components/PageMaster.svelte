@@ -9,7 +9,7 @@
 </script>
 <main>
     <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
-        <div class="hidden border-r bg-muted/40 md:block">
+        <div class="min-h-screen hidden border-r bg-muted/40 md:block">
             <MenuFull />
         </div>
         <!--MAIN page-->
