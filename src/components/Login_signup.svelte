@@ -64,11 +64,12 @@
                         type="email"
                         placeholder="m@example.com"
                         required
+                        autocomplete="email"
                     />
                 </div>
                 <div class="grid gap-2">
                     <Label for="password">Password</Label>
-                    <Input bind:value={password} id="signuppassword" type="password" />
+                    <Input bind:value={password} id="signuppassword" type="password" autocomplete="new-password"/>
                 </div>
                 <Button on:click={signUp} type="submit" class="w-full">Create an account</Button>
                 <Button variant="outline" class="w-full">Sign up with Google</Button>

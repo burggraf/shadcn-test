@@ -48,6 +48,7 @@
                         type="password"
                         placeholder="************"
                         required
+                        autocomplete="new-password"
                     />
                 </div>
 

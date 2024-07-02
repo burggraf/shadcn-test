@@ -1,6 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import replace from '@rollup/plugin-replace';
 
 import { readFileSync } from 'fs'
 import { fileURLToPath } from 'url';
@@ -12,14 +11,7 @@ const pkg = JSON.parse(json);
 
 export default defineConfig({
 	plugins: [
-        sveltekit(),
-        replace({
-            preventAssignment: true,
-            values: {
-                'Added non-passive event listener to a scroll-blocking \'touchstart\' event.': '',
-                'Added non-passive event listener to a scroll-blocking \'touchmove\' event.': '',
-            }
-        })
+        sveltekit()
     ],
 	define: {
 		'__APP_VERSION__': JSON.stringify(pkg.version),
