@@ -11,9 +11,6 @@
 	export let size: $$Props["size"] = "default";
 	export let builders: $$Props["builders"] = [];
 	export { className as class };
-
-    // Refactor to include passive event listeners
-    let options = { passive: true };
 </script>
 
 <ButtonPrimitive.Root
@@ -21,8 +18,8 @@
 	class={cn(buttonVariants({ variant, size, className }))}
 	type="button"
 	{...$$restProps}
-	on:click
-	on:keydown
+	on:click|passive
+	on:keydown|passive
 >
 	<slot />
 </ButtonPrimitive.Root>
