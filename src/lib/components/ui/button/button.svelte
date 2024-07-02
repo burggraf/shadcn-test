@@ -21,8 +21,8 @@
 	class={cn(buttonVariants({ variant, size, className }))}
 	type="button"
 	{...$$restProps}
-	on:click|passive
-	on:keydown|passive
+	on:click
+	on:keydown
 >
 	<slot />
 </ButtonPrimitive.Root>
