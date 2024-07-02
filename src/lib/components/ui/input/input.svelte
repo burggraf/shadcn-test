@@ -17,19 +17,19 @@
 		className
 	)}
 	bind:value
-	on:blur
-	on:change
-	on:click
-	on:focus
-	on:focusin
-	on:focusout
-	on:keydown
-	on:keypress
-	on:keyup
-	on:mouseover
-	on:mouseenter
-	on:mouseleave
-	on:paste
-	on:input
+	on:blur|passive
+	on:change|passive
+	on:click|passive
+	on:focus|passive
+	on:focusin|passive
+	on:focusout|passive
+	on:keydown|passive
+	on:keypress|passive
+	on:keyup|passive
+	on:mouseover|passive
+	on:mouseenter|passive
+	on:mouseleave|passive
+	on:paste|passive
+	on:input|passive
 	{...$$restProps}
 />

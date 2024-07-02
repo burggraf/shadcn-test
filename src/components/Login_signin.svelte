@@ -61,6 +61,8 @@
 					</div>
 					<Input bind:value={password} id="signinpassword" type="password" required autocomplete="current-password"/>
 				</div>
+                <!-- Hidden input for username to improve accessibility -->
+                <input type="hidden" name="username" aria-hidden="true">
 				<Button on:click={signIn} type="submit" class="w-full">Login</Button>
 				<Button variant="outline" class="w-full">Login with Google</Button>
 			</div>
