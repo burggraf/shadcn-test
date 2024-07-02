@@ -48,6 +48,7 @@
                         type="email"
                         placeholder="m@example.com"
                         required
+                        autocomplete="email"
                     />
                 </div>
 
